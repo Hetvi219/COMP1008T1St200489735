@@ -14,4 +14,9 @@ public class Phone {
         this.memory = memory;
         this.price = price;
     }
+    public void setModel(String model) {
+        if(model.length() > 3)
+            this.model = model;
+        else throw new IllegalArgumentException("model needs to be longer");
+    }
 }
