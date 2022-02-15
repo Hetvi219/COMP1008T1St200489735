@@ -26,4 +26,16 @@ public class Phone {
             throw new IllegalArgumentException("memory value is invalid");
         }
     }
+    public void setMake(String make) {
+        validMakes.add("Apple");
+        validMakes.add("HTC");
+        validMakes.add("Samsung");
+        validMakes.add("Google");
+        validMakes.add("Moto");
+
+        if(validMakes.contains(make)) this.make = make;
+        else{
+            throw new IllegalArgumentException("manufacturer invalid");
+        }
+    }
 }
