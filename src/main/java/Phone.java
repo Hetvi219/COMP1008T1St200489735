@@ -47,4 +47,12 @@ public class Phone {
     public Double getPrice() {
         return price;
     }
+    public String toString() {
+        return "Phone{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", memory=" + memory +
+                ", price=" + price +
+                '}';
+    }
 }
