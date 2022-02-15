@@ -19,4 +19,11 @@ public class Phone {
             this.model = model;
         else throw new IllegalArgumentException("model needs to be longer");
     }
+    public void setMemory(int memory) {
+        if(memory >= 4 && memory <= 512)
+            this.memory = memory;
+        else{
+            throw new IllegalArgumentException("memory value is invalid");
+        }
+    }
 }
