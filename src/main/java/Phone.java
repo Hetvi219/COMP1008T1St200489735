@@ -38,4 +38,13 @@ public class Phone {
             throw new IllegalArgumentException("manufacturer invalid");
         }
     }
+    public void setPrice(Double price) {
+        if(price >= 0 && price <= 3000)
+            this.price = price;
+        else throw new IllegalArgumentException("price is invalid");
+    }
+
+    public Double getPrice() {
+        return price;
+    }
 }
